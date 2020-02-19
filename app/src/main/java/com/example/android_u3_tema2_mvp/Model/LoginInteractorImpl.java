@@ -17,7 +17,10 @@ public class LoginInteractorImpl  implements LoginInteractor{
           listener.onPasswordError();
           return;
         }
+        //aqui esta la consulta en el servidor
+        //respuesta correcta
         listener.onSuccess();
+        //respuesta negativa
       }
     }, 1000);
   }
